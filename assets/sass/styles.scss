@@ -9,17 +9,20 @@
   }
 
   .testimonio {
-    width: 100%;
+    width: 80%;
     text-align: center;
-    color: gold;
+    color: rgb(242, 237, 205);
 
     &__texto {
-      font-style: italic;
+      font-style: italic;   
     }
     &__img {
       width: 64px;
       height: 64px;
-      border-radius: 50%;
+      border-radius: 50%;margin-top: 15px;
+      margin-bottom: 15px;
+
+      
     }
     &__nombre {
       font-weight: 700 ;

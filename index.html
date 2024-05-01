@@ -11,7 +11,7 @@
 </head>
 
 <body class="bg-black text-light">
-    <div class="container-md">
+    <div class="container-md" id="inicio">
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-md">
                 <a class="navbar-brand text-light" href="#">
@@ -27,16 +27,16 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active text-light" aria-current="page" href="#inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Quienes Somos</a>
+                            <a class="nav-link text-light" href="#quienes">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light " href="#">Destacados</a>
+                            <a class="nav-link text-light " href="#destacados">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light " href="#">Contacto</a>
+                            <a class="nav-link text-light " href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -65,7 +65,7 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="row my-4">
+        <div class="row my-4" id="quienes">
             <div class="col border-bottom border-white">
                 <h2 class="text-center">Quienes somos?</h2>
             </div>
@@ -75,7 +75,7 @@
         <div class="card mb-auto bg-black" style="max-width: 100;">
             <div class="row ">
                 <div class="col-md-6">
-                    <img src="assets/img/card1.jpg" class="img-fluid rounded-start h-100" alt="...">
+                    <img src="assets/img/card1.jpg" class="img-fluid rounded-start h-100 d-non d-md-block" alt="...">
                 </div>
                 <div class="col-md-6">
                     <div class="card-body ">
@@ -92,7 +92,7 @@
         </div>
     </div>
     <div class="container-md">
-        <div class="row my-4">
+        <div class="row my-4" id="destacados">
             <div class="col border-bottom border-white">
                 <h2 class="text-center">Destacados</h2>
             </div>
@@ -197,46 +197,137 @@
         </div>
     </div>
     <div class="container-md">
-        <div class="row my-4">
+        <div class="row my-5">
             <div class="col border-bottom border-white">
                 <h2 class="text-center">Testimonios</h2>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col">
-            <div class="testimonio">
-                <div class="testimonio_texto"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
-                    necessitatibus mollitia magnam. Similique doloribus quasi, distinctio quae aspernatur, fugit nam,
-                    illo consectetur autem enim ducimus numquam architecto assumenda soluta cupiditate!</div>
-                <img src="assets/img/testimonio1.jpg" alt="" class="testimonio_img">
-                <div class="testimonio_nombre">Marianela</div>
-            </div>
+    <div class="container-md">
+        <div class="row">
             <div class="col">
                 <div class="testimonio">
-                    <div class="testimonio_texto"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+                    <div class="testimonio__texto"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
                         necessitatibus mollitia magnam. Similique doloribus quasi, distinctio quae aspernatur, fugit
                         nam,
                         illo consectetur autem enim ducimus numquam architecto assumenda soluta cupiditate!</div>
-
-                    <img src="assets/img/testimonio1.jpg" alt="" class="testimonio_img">
-
+                    <img src="assets/img/testimonio1.jpg" alt="" class="testimonio__img">
                     <div class="testimonio_nombre">Marianela</div>
                 </div>
             </div>
             <div class="col">
                 <div class="testimonio">
-                    <div class="testimonio_texto"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+                    <div class="testimonio__texto"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
                         necessitatibus mollitia magnam. Similique doloribus quasi, distinctio quae aspernatur, fugit
                         nam,
                         illo consectetur autem enim ducimus numquam architecto assumenda soluta cupiditate!</div>
 
-                    <img src="assets/img/testimonio1.jpg" alt="" class="testimonio_img">
+                    <img src="assets/img/testimonio2.jpg" alt="" class="testimonio__img">
 
-                    <div class="testimonio_nombre">Marianela</div>
+                    <div class="testimonio__nombre">Javi</div>
                 </div>
             </div>
+            <div class="col">
+                <div class="testimonio">
+                    <div class="testimonio__texto"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+                        necessitatibus mollitia magnam. Similique doloribus quasi, distinctio quae aspernatur, fugit
+                        nam,
+                        illo consectetur autem enim ducimus numquam architecto assumenda soluta cupiditate!</div>
+
+                    <img src="assets/img/testimonio3.jpg" alt="" class="testimonio__img">
+
+                    <div class="testimonio__nombre">Crist</div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="container-md">
+        <div class="row my-4" id="contacto">
+            <div class="col border-bottom border-white">
+                <h2 class="text-center">Contacto</h2>
+            </div>
+        </div>
+        <div class="container-md">
+            <div class="row">
+                <div class="col-6">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputname" class="form-label">
+                                Nombre
+                                <a href="#" data-bs-toggle="tooltip" data-bs-title="Ingrese su nombre"><i
+                                        class="fa-solid fa-circle-info text-white"></i></a>
+
+                            </label>
+                            <input type="name" class="form-control" id="inputname">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-title="Ingrese su email"><i
+                                        class="fa-solid fa-circle-info text-white"></i></a>
+                                Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-title="Ingrese mensaje"><i
+                                        class="fa-solid fa-circle-info text-white"></i></a>
+                                Mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckdefault">
+                                <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Acepto los términos y condiciones
+                                </a>
+                                
+                            </label>
+                            <div class="d-grid gap-2 d-md-block">
+                                <button class="btn bg-body-secondary btn-ligth" type="button">Button</button>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="col d-flex align-items-center">
+                    <div>
+                        <ul style="list-style: none; padding: 0;">
+                            <li><i <i class="fa-solid fa-phone me-4"></i>+56787667899</li>
+                            <li><i class="fa-regular fa-envelope me-4"></i>contacto@viajeschile.cl</li>
+                            <li><i class="fa-brands fa-linkedin me-4"></i>Viajes_chile</li>
+                            <li><i class="fa-brands fa-instagram me-4"></i>@viajes_chile</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Terminos y condiciones</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="cerrar"></button>
+                        </div>
+                        <div class="modal-body text-black">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit possimus, delectus
+                                voluptatum ipsam ab, maiores culpa vel quidem debitis rem quos excepturi esse
+                                exercitationem non quas nam odit ipsa quasi.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
 </body>
 
 </html>
