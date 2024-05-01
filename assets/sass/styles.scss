@@ -1,0 +1,28 @@
+
+.body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  .testimonio {
+    width: 100%;
+    text-align: center;
+    color: gold;
+
+    &__texto {
+      font-style: italic;
+    }
+    &__img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+    }
+    &__nombre {
+      font-weight: 700 ;
+    }
+
+  }
